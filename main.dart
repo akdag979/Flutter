@@ -4,19 +4,21 @@
 
 import 'package:flutter/material.dart';
 
+
 void main() {
   runApp(
     //First widget is called Text widget, and it is a string text with single style.
       Text(
         "Hello Flutter",
         textDirection: TextDirection.ltr,
-        textAlign: TextAlign.center,
+        textAlign: TextAlign.left,
         overflow: TextOverflow.ellipsis,
         style: TextStyle(
-               fontWeight: FontWeight.w300,
-               fontStyle: FontStyle.italic,
+          fontFamily: 'Trajan Pro',
+          fontWeight: FontWeight.w700,
+          fontStyle: FontStyle.italic,
+          color: Colors.green,
         ),
-
       )
   );
 }
