@@ -4,20 +4,18 @@
 
 import 'package:flutter/material.dart';
 
+void main() => runApp(MyApp());
 
-void main() {
-  runApp(
-    //First widget is called Text widget, and it is a string text with single style.
-      Text(
-        "Hello Flutter",
-        textDirection: TextDirection.ltr,
-        textAlign: TextAlign.left,
-        overflow: TextOverflow.ellipsis,
-        style: TextStyle(
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.italic,
-          color: Colors.green,
-        ), //TextStyle
-      ) //Text
-  );
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Hello Flutter',
+            home: Scaffold(
+                     appBar: AppBar(title: Text('Hello Flutter', style: TextStyle(fontSize: 30.0),), backgroundColor: Colors.red),
+                     body: Center(child: Text('Hello Budy',style: TextStyle(color: Colors.red,fontSize: 35.0)),)
+      ),
+    );
+  }
 }
