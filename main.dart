@@ -14,11 +14,10 @@ void main() {
         textAlign: TextAlign.left,
         overflow: TextOverflow.ellipsis,
         style: TextStyle(
-          fontFamily: 'Trajan Pro',
           fontWeight: FontWeight.w700,
           fontStyle: FontStyle.italic,
           color: Colors.green,
-        ),
-      )
+        ), //TextStyle
+      ) //Text
   );
 }
