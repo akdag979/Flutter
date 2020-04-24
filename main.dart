@@ -8,7 +8,7 @@ void main() {
 
   runApp(
       MaterialApp(
-        title: "Sateful App Example",
+        title: "Stateful App Example",
         home: InputtoText(),
       )
   );
